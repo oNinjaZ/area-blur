@@ -33,16 +33,14 @@ namespace ぶれ範囲
 			}
 		}
 
-		private void theBorder_MouseEnter(object sender, MouseEventArgs e)
+		private void lol_MouseEnter(object sender, MouseEventArgs e)
 		{
-			lol.Background = Brushes.Transparent;
-			theBorder.Opacity = 0.1;
+			lol.Opacity = 0.1;
 		}
 
-		private void theBorder_MouseLeave(object sender, MouseEventArgs e)
+		private void lol_MouseLeave(object sender, MouseEventArgs e)
 		{
-			lol.Background = Brushes.Black;
-			theBorder.Opacity = 1;
+			lol.Opacity = 1;
 		}
 	}
 }

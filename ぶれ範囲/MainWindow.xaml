@@ -11,17 +11,15 @@
         MouseDown="Window_MouseDown"
         Background="Transparent"
         Topmost="True">
-    <Border x:Name="theBorder"
-            Padding="1" 
-            BorderThickness="0 3 0 0"
-            Background="DarkGreen"
-            Opacity="1"
-            MouseEnter="theBorder_MouseEnter"
-            MouseLeave="theBorder_MouseLeave">
 
+    <Grid x:Name="lol" 
+          Background="Black"  
+          Opacity="1"
+          MouseEnter="lol_MouseEnter"
+          MouseLeave="lol_MouseLeave">
+        <Grid.InputBindings>
+            <KeyBinding></KeyBinding>
+        </Grid.InputBindings>
+    </Grid>
 
-        <Grid x:Name="lol" Background="Black"  Opacity="1">
-
-        </Grid>
-    </Border>
 </Window>
