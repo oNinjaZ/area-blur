@@ -9,16 +9,15 @@
         AllowsTransparency="True"
         WindowStyle="None"
         MouseDown="Window_MouseDown"
-        Background="Transparent">
+        Background="Transparent"
+        Topmost="True">
     <Border x:Name="theBorder"
             Padding="1" 
             BorderThickness="0 3 0 0"
             Background="DarkGreen"
             Opacity="1"
             MouseEnter="theBorder_MouseEnter"
-            MouseLeave="theBorder_MouseLeave"
-            PreviewLostKeyboardFocus="theBorder_PreviewLostKeyboardFocus"
-            >
+            MouseLeave="theBorder_MouseLeave">
 
 
         <Grid x:Name="lol" Background="Black"  Opacity="1">

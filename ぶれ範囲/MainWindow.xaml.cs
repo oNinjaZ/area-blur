@@ -44,11 +44,5 @@ namespace ぶれ範囲
 			lol.Background = Brushes.Black;
 			theBorder.Opacity = 1;
 		}
-
-		private void theBorder_PreviewLostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
-		{
-			var window = (Window)sender;
-			window.Topmost = true;
-		}
 	}
 }
