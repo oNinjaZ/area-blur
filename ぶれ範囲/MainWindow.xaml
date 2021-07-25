@@ -10,16 +10,35 @@
         WindowStyle="None"
         MouseDown="Window_MouseDown"
         Background="Transparent"
+        ResizeMode="CanResize"
         Topmost="True">
+    <WindowChrome.WindowChrome>
+        <WindowChrome 
+        CaptionHeight="0"
+        ResizeBorderThickness="10" />
+    </WindowChrome.WindowChrome>
 
     <Grid x:Name="lol" 
           Background="Black"  
           Opacity="1"
           MouseEnter="lol_MouseEnter"
           MouseLeave="lol_MouseLeave">
-        <Grid.InputBindings>
-            <KeyBinding></KeyBinding>
-        </Grid.InputBindings>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".1*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Button Background="Transparent"
+                BorderThickness="0"
+                Margin="0 5 5 0"
+                Opacity="0.5"
+                HorizontalAlignment="Right"
+                Click="Button_Click">
+            <Image Grid.Row="0" 
+                   Source="pack://application:,,,/Assets/settings.png"></Image>
+        </Button>
+
     </Grid>
 
 </Window>
